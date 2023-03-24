@@ -44,19 +44,9 @@
 
 <style scoped lang="scss">
 
-    $main-color: #0282f9;
+    @use 'style/_variables.scss' as *;
+    @use 'style/_mixins.scss' as *;
 
-    @mixin centerFlex() {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    @mixin centerMaxWidth() {
-        max-width: 980px;
-        margin: auto;
-    }
     header .container {
         @include centerFlex();
         @include centerMaxWidth();
@@ -83,20 +73,12 @@
             }
 
             li:hover {
-                border-bottom: 4px solid $main-color;
+                border-bottom: 4px solid $skyblue;
                 cursor: pointer;
             }
 
         } 
 
-
     }
-
-
-
-
-
-
-
 
 </style>
