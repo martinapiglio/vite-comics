@@ -78,7 +78,7 @@ section {
         }
 
         li:last-child img {
-            width: 25%
+            width: 25%;
         }
     }
 

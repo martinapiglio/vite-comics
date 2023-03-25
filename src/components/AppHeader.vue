@@ -58,6 +58,10 @@
             height: 100%;
         }
 
+        #header-left {
+            padding: .8rem 0;
+        }
+
         #header-right {
 
             ul {
@@ -68,7 +72,6 @@
             };
 
             li {
-                
                 border-bottom: 4px solid transparent;
             }
 

@@ -17,14 +17,17 @@
     @use 'style/_mixins.scss' as *;
 
 section {
-    @include centerFlex();
     
     height: 6.5rem;
     color: white;
     background-color: $dark-grey;
         .container {
         @include centerMaxWidth();
+        @include centerFlex();
+
+        height:100%;
+
+        }
     }
-}
 
 </style>
