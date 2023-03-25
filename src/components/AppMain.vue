@@ -2,13 +2,13 @@
 </script>
 
 <template>
-    <section>
+    <main>
         <div class="container">
             <h1>
                 -- Content goes here --
             </h1>
         </div>
-    </section>
+    </main>
 </template>
 
 <style scoped lang="scss">
@@ -16,7 +16,7 @@
     @use 'style/_variables.scss' as *;
     @use 'style/_mixins.scss' as *;
 
-section {
+    main {
     
     height: 6.5rem;
     color: white;

@@ -1,13 +1,15 @@
 <script>
   import AppHeader from "./components/AppHeader.vue";
-  import AppContent from "./components/AppContent.vue";
-  import AppNavbar from "./components/AppNavbar.vue";
+  import AppMain from "./components/AppMain.vue";
+  import AppFooterTop from "./components/AppFooterTop.vue";
+  import AppFooterCenter from "./components/AppFooterCenter.vue";
 
   export default {
         components: {
             AppHeader,
-            AppContent,
-            AppNavbar
+            AppMain,
+            AppFooterTop,
+            AppFooterCenter
         }
     } 
 
@@ -17,9 +19,14 @@
 
   <AppHeader></AppHeader>
 
-  <AppContent></AppContent>
+  <AppMain></AppMain>
 
-  <AppNavbar></AppNavbar>
+  <footer>
+    
+    <AppFooterTop></AppFooterTop>
+    <AppFooterCenter></AppFooterCenter>
+
+  </footer>
 
 </template>
 
