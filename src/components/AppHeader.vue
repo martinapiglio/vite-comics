@@ -60,6 +60,10 @@
 
         #header-left {
             padding: .8rem 0;
+
+            img {
+                cursor: pointer;
+            }
         }
 
         #header-right {
@@ -73,6 +77,8 @@
 
             li {
                 border-bottom: 4px solid transparent;
+
+                transition: 0.1s;
             }
 
             li:hover {

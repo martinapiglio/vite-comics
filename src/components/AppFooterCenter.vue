@@ -4,47 +4,47 @@
             return {
                 list: [
                     {
-                        title: "dc comics",
+                        title: 'dc comics',
                         links: [
-                            "Characters",
-                            "Movies",
-                            "TV",
-                            "Games",
-                            "Videos",
-                            "News"
+                            'Characters',
+                            'Movies',
+                            'TV',
+                            'Games',
+                            'Videos',
+                            'News'
                         ]
                     },
                     {
-                        title: "shop",
+                        title: 'shop',
                         links: [
-                            "Shop DC",
-                            "Shop DC Collectibles"
+                            'Shop DC',
+                            'Shop DC Collectibles'
                         ]
                     },
                     {
-                        title: "DC",
+                        title: 'DC',
                         links: [
-                            "Terms Of Use",
-                            "Privacy policy (New)",
-                            "Ad Choices",
-                            "Advertising",
-                            "Jobs",
-                            "Subscriptions",
-                            "Talent Workshops",
-                            "CPSC Certificates",
-                            "Ratings",
-                            "Shop Help",
-                            "Contact Us"
+                            'Terms Of Use',
+                            'Privacy policy (New)',
+                            'Ad Choices',
+                            'Advertising',
+                            'Jobs',
+                            'Subscriptions',
+                            'Talent Workshops',
+                            'CPSC Certificates',
+                            'Ratings',
+                            'Shop Help',
+                            'Contact Us'
                         ]
                     },
                     {
-                        title: "sites",
+                        title: 'sites',
                         links: [
-                            "DC",
-                            "MAD Magazine",
-                            "DC Kids",
-                            "DC Universe",
-                            "DC Power Visa"
+                            'DC',
+                            'MAD Magazine',
+                            'DC Kids',
+                            'DC Universe',
+                            'DC Power Visa'
                         ]
                     }
                 ]
@@ -58,7 +58,6 @@
 
     <section>
         <div class="container">
-
             
            <div id="footer-center-links">
 
@@ -111,6 +110,7 @@
                 #footer-center-link {
 
                     h2 {
+                        padding-bottom: .5rem;
                         font-size: medium;
                         text-transform: uppercase;
                         color: white;
@@ -120,6 +120,12 @@
                         text-decoration: none;
                         font-size: smaller;
                         color: $lighter-gray;
+
+                        transition: 0.1s;
+                    }
+
+                    ul li a:hover {
+                        color: white;
                     }
                     
                 }

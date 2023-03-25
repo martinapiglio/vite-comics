@@ -3,13 +3,15 @@
   import AppMain from "./components/AppMain.vue";
   import AppFooterTop from "./components/AppFooterTop.vue";
   import AppFooterCenter from "./components/AppFooterCenter.vue";
+  import AppFooterBottom from "./components/AppFooterBottom.vue"
 
   export default {
         components: {
             AppHeader,
             AppMain,
             AppFooterTop,
-            AppFooterCenter
+            AppFooterCenter,
+            AppFooterBottom
         }
     } 
 
@@ -25,6 +27,7 @@
     
     <AppFooterTop></AppFooterTop>
     <AppFooterCenter></AppFooterCenter>
+    <AppFooterBottom></AppFooterBottom>
 
   </footer>
 
