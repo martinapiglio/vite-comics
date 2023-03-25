@@ -13,7 +13,8 @@
         'fans',
         'news',
         'shop'
-      ]
+      ],
+      isActiveIndex: ''
     };
   },
 };
@@ -31,7 +32,7 @@
             <div id="header-right">
 
                 <ul>
-                    <li v-for="link in links">
+                    <li v-for="(link, index) in links" @click="isActiveIndex = index" :class=" index == isActiveIndex ? 'active' : ''">
                     {{ link }} </li>
                 </ul>
 
@@ -84,6 +85,11 @@
             li:hover {
                 border-bottom: 4px solid $skyblue;
                 cursor: pointer;
+            }
+
+            li.active {
+                color: $skyblue;
+                border-bottom: 4px solid $skyblue;
             }
 
         } 
