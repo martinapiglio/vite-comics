@@ -94,8 +94,8 @@
         .container {
             @include centerMaxWidth();
 
-            display: flex;
-            justify-content: space-between;
+            position: relative;
+            overflow-y: hidden;
 
             height: 350px;
 
@@ -103,8 +103,11 @@
 
                 display: flex;
                 flex-flow: column wrap;
+                align-content: flex-start;
+                
                 gap: 1rem;
 
+                height: 100%;
                 padding: 2rem 0;
 
                 #footer-center-link {
@@ -133,11 +136,11 @@
             }
 
             #footer-center-logo {
-                display: flex;
-                align-items: center;
-
-                height: 100%;
-                overflow-y: hidden;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 0;
             }
 
         }

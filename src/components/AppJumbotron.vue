@@ -10,7 +10,7 @@
 <style scoped lang="scss">
 
     #jumbotron {
-        height: 280px;
+        min-height: 280px;
 
         background-image: url("img/jumbotron.jpg");
         background-repeat: no-repeat;
