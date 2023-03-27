@@ -1,12 +1,26 @@
 <script>
+    import AppJumbotron from './AppJumbotron.vue';
+
+export default{
+    data(){
+      return{
+      
+      }
+    },
+
+    components:{
+        AppJumbotron
+    }
+    
+  }
 </script>
 
 <template>
     <main>
+        <AppJumbotron></AppJumbotron>
         <div class="container">
-            <h1>
-                -- Content goes here --
-            </h1>
+            
+
         </div>
     </main>
 </template>
@@ -18,7 +32,7 @@
 
     main {
     
-    height: 6.5rem;
+    
     color: white;
     background-color: $dark-grey;
         .container {
